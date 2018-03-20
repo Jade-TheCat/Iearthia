@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+          [
+            "rqr",
+            "qgq",
+            "rqr"
+          ],
+  "key": {
+    "r": {
+      "item": "minecraft:netherrack"
+    },
+    "q": {
+      "item": "minecraft:quartz"
+    },
+    "g": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "item": "iearthia:dustnetherite",
+    "count": 1
+  }
+}
