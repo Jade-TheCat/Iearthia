@@ -8,10 +8,10 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ItemGemEnderite extends Item {
-    public ItemGemEnderite() {
-        setRegistryName("gemenderite");
-        setUnlocalizedName(Constants.MODID + ".gemenderite");
+public class ItemDustEnderite extends Item {
+    public ItemDustEnderite() {
+        setRegistryName("dustenderite");
+        setUnlocalizedName(Constants.MODID + ".dustenderite");
         setCreativeTab(CreativeTabs.MATERIALS);
     }
 

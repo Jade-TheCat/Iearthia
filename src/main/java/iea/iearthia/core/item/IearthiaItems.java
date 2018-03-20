@@ -11,13 +11,21 @@ public class IearthiaItems {
     @GameRegistry.ObjectHolder("iearthia-core:ingotnetherite")
     public static ItemIngotNetherite ingotNetherite;
 
-    @GameRegistry.ObjectHolder("iearthia-core:gemenderite")
-    public static ItemGemEnderite gemEnderite;
+    @GameRegistry.ObjectHolder("iearthia-core:ingottitanium")
+    public static ItemIngotTitanium ingotTitanium;
+
+    @GameRegistry.ObjectHolder("iearthia-core:dustenderite")
+    public static ItemDustEnderite dustEnderite;
+
+    @GameRegistry.ObjectHolder("iearthia-core:dustnetherite")
+    public static ItemDustNetherite dustNetherite;
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {
         ingotEnderite.initModel();
         ingotNetherite.initModel();
-        gemEnderite.initModel();
+        ingotTitanium.initModel();
+        dustEnderite.initModel();
+        dustNetherite.initModel();
     }
 }

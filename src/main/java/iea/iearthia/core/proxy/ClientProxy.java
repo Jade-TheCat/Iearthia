@@ -1,5 +1,6 @@
 package iea.iearthia.core.proxy;
 
+import iea.iearthia.core.block.IearthiaBlocks;
 import iea.iearthia.core.item.IearthiaItems;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -17,5 +18,6 @@ public class ClientProxy extends CommonProxy {
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
         IearthiaItems.initModels();
+        IearthiaBlocks.initModels();
     }
 }
