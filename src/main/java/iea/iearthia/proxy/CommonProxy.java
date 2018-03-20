@@ -4,6 +4,7 @@ import iea.iearthia.block.BlockOreTitanium;
 import iea.iearthia.block.IearthiaBlocks;
 import iea.iearthia.item.*;
 import iea.iearthia.util.RecipeHandler;
+import iea.iearthia.world.WorldGenOre;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -13,6 +14,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
@@ -22,6 +24,7 @@ public class CommonProxy {
 
     public void init(FMLInitializationEvent e) {
         RecipeHandler.registerSmelting();
+        GameRegistry.registerWorldGenerator(new WorldGenOre(), 0);
     }
 
     public void postInit(FMLPostInitializationEvent e) {
