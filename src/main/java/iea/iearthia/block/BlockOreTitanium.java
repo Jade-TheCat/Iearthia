@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockOreTitanium extends Block {
     public BlockOreTitanium() {
-        super(Material.ROCK);
+        super(Material.GROUND);
         setUnlocalizedName(Constants.MODID + ".oretitanium");
         setRegistryName("oretitanium");
         setCreativeTab(CreativeTabs.MATERIALS);
